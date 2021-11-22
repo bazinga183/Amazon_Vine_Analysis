@@ -16,8 +16,8 @@ Then, I began my analysis on the dataset using PySpark.
 
 Here are some questions that are needed to be answered so that there is context around the conclusion:
 
- - How many Vine reviews and non-Vine reviews were there?
-   - After filtering to reviews to see if there were more than 20 total votes, there 0 Vine reviews and 631 non-Vine reviews.
+How many Vine reviews and non-Vine reviews were there?
+ - After filtering to reviews to see if there were more than 20 total votes, there 0 Vine reviews and 631 non-Vine reviews.
 
 
    ```
@@ -27,10 +27,11 @@ total_votes_df = vine_df.filter("total_votes >= 20")
 total_votes_df.show()
 ```
 
- - How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-   - In total, there were 631 five-star reviews there were non-Vine reviews and there were 0 Vine reviews that were Vine reviews.
- - What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
-   - The percentage of Vine reviews that were five stars were 0%, which means that the percentage of reviews that were non-Vine was 100%. 
+How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+ - In total, there were 631 five-star reviews there were non-Vine reviews and there were 0 Vine reviews that were Vine reviews.
+
+What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+ - The percentage of Vine reviews that were five stars were 0%, which means that the percentage of reviews that were non-Vine was 100%. 
 
 ## Summary 
 In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
