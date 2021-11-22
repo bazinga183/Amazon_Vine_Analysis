@@ -20,8 +20,8 @@ How many Vine reviews and non-Vine reviews were there?
  - After filtering to reviews to see if there were more than 20 total votes, there 0 Vine reviews and 631 non-Vine reviews.
 
 
-   ```
-   # Filter for where total_votes is >= 20
+```
+# Filter for where total_votes is >= 20
 vine_df = df.select(['review_id', 'star_rating', 'helpful_votes', 'total_votes', 'vine', 'verified_purchase'])
 total_votes_df = vine_df.filter("total_votes >= 20")
 total_votes_df.show()
