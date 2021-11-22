@@ -28,6 +28,19 @@ total_votes_df.show()
 ```
 
 How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+```
+# Filter out where there was a review included (vine == 'Y')
+paid_df = filtered_df.filter(filtered_df['vine'] == 'Y')
+paid_df.show()
+
+# Filter out where there was a review included (vine == 'N')
+not_paid_df = filtered_df.filter(filtered_df['vine'] == 'N')
+not_paid_df.show()
+
+```
+
+![five_star](https://user-images.githubusercontent.com/46951897/142800776-62e2e3a3-c583-46bb-96eb-15f46530d524.png)
+
  - In total, there were 631 five-star reviews there were non-Vine reviews and there were 0 Vine reviews that were Vine reviews.
 
 What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
